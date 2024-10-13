@@ -11,6 +11,14 @@ The project currently has five python notebook files that are split based on the
 - **5.Analysis.ipynb**
 
 
+There are also some .csv files:
+- **WarnMeEmails3.csv** : Imported from OutlookMail application, and consists of the following columns/features:
+    -Subject, Body, From: (Name), From: (Address), From: (Type), To: (Name), To: (Address), To: (Type), Importance
+- **warnme_info.csv** (in folder TrueBlue) : WarnMe Emails without replies (some emails have replies that provide extra information, so essentially removed those)
+- **warnme_emails_w_email_dtime.csv** : Combines both emails extracted from Gmail and Outlook into one .csv file (all replies from emails that have one are also removed). There are quite a lot of null values as there are a lot of duplicate subject lines, these are removed in **4.Absolute_Crimes.ipynb**
+- 
+     
+
 Since the crimes/number of observations are quite low, the main focus of this project was to extract and wrangle the data into a workable dataset. The last Python notebook provides some basic visualizations from this smaller dataset.
 
 
