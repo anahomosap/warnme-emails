@@ -23,9 +23,9 @@ There are also some .csv files that describe the data set at different stages of
 - **crimes_final_dataframe_part1.csv**: All WarnMe emails containing crimes (includes emails sent out on the same day and emails sent out later), this is the final dataset that I have so far containing the following features:
 
 
-  Email Subject, Email Body, date of crime, time of crime, email time, email day of week, email date, crime location, crime latitude, crime longitude, crime day of week, total difference (in minutes)
+  **Email Subject, Email Body, date of crime, time of crime, email time, email day of week, email date, crime location, crime latitude, crime longitude, crime day of week, total difference (in minutes)**
 
--**Some clarifications about the features:** 
+**Some clarifications about the features:** 
   time of crime: set in military time
   crime latitude: latitude of crime location
   crime longitude: longitude of crime location
