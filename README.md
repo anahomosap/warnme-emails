@@ -21,6 +21,15 @@ There are also some .csv files that describe the data set at different stages of
 
 - **same_day_emails.csv**: WarnMe emails containing crimes that send out the email notification on the same day as the occurrence of the crime. This particular dataset was used to see if there is any trend in waiting times between when a crime happens and when the corresponding WarnMe email is sent out. 
 - **crimes_final_dataframe_part1.csv**: All WarnMe emails containing crimes (includes emails sent out on the same day and emails sent out later), this is the final dataset that I have so far containing the following features:
+
+
+  Email Subject, Email Body, date of crime, time of crime, email time, email day of week, email date, crime location, crime latitude, crime longitude, crime day of week, total difference (in minutes)
+
+-**Some clarifications about the features:** 
+  time of crime: set in military time
+  crime latitude: latitude of crime location
+  crime longitude: longitude of crime location
+  total difference (in minutes): 
   
      
 
