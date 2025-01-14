@@ -1,14 +1,14 @@
 # WarnMe Notification System Analysis
 
-This project uses collected emails from the UC Berkeley WarnMe Notification system (all received from my student email inbox) over the course of three years, where the emails range from May 18, 2021  to December 28, 2023. The WarnMe notification system is used by the university as a result of the Clery Act, which enforces all public universities to provide university students, faculty, and staff with information about crimes and potential hazards that occur on campus or on campus-affiliated buildings. Since becoming a student here, I was curious to analyze crime occurrences in the Berkeley area as this was one of my primary concerns upon coming here, and so I wanted to determine if there are any patterns in crime occurrences in the area.  
+This project uses collected emails from the UC Berkeley WarnMe Notification system (from my student email inbox) over the course of three years, where the emails range from May 18, 2021 to December 28, 2023. The WarnMe notification system is used by the university as a result of the Clery Act, which enforces all public universities to provide university students, faculty, and staff with information about crimes and potential hazards that occur on campus or on campus-affiliated buildings. Since becoming a student here, I was curious to analyze crime occurrences in the Berkeley area as this was one of my primary concerns upon coming here, and so I wanted to determine if there are any patterns in crime occurrences in the area.  
 
-The project currently has five python notebook files that are split based on the tasks they complete:
+The project currently has five python notebook files that are split based on the tasks they complete (more information on what task each notebook completes can be found in the Jupyter Notebook description):
 
-- **1.UnravelingText.ipynb**
-- **2.Importing Emails and Cleaning up Data.ipynb**
-- **3.Cleaning_WarnMeEmails.ipynb**
-- **4.Absolute_Crimes.ipynb**
-- **5.Analysis.ipynb**
+- **1.UnravelingText.ipynb**: Creates a DataFrame with the email subject, email body, email date and time, email day of week, as well as crime information like crime date and time
+- **2.Importing Emails and Cleaning up Data.ipynb**: Removes duplicate emails (emails with same subject lines) from WarnMe emails (imported from Outlook Mail) so that DataFrames can be merged in Part C of **1.UnravelingText.ipynb**
+- **3.Cleaning_WarnMeEmails.ipynb**: Manually entering data fro emails with duplicate subject lines, and creating two DataFrames, one concerned only with emails warning users about crimes and a DataFrame with community advisories (non-crimes)
+- **4.Absolute_Crimes.ipynb**: Manually entering crime location (latitude and longitude -- manual entry was the best way I found to have accurate locations) as well as producing final cleaned datasets. 
+- **5.Analysis.ipynb**: Three visualizations based on the finalized datasets. 
 
 
 There are also some .csv files that describe the dataset at different stages of cleaning:
