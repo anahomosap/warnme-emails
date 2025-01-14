@@ -12,11 +12,11 @@ The project currently has five python notebook files that are split based on the
 
 
 There are also some .csv files that describe the dataset at different stages of cleaning:
-- **WarnMeEmails3.csv** : Imported from OutlookMail application, and consists of the following columns/features:
+- **WarnMeEmails3.csv**: Imported from OutlookMail application, and consists of the following columns/features:
     -Subject, Body, From: (Name), From: (Address), From: (Type), To: (Name), To: (Address), To: (Type), Importance
-- **warnme_info.csv** (in folder TrueBlue) : WarnMe Emails without replies (some emails have replies that provide extra information, so essentially removed those)
-- **warnme_emails_w_email_dtime.csv** : Combines both emails extracted from Gmail and Outlook into one .csv file (all replies from emails that have one are also removed). There are quite a lot of null values as there are a lot of duplicate subject lines, these are removed in **4.Absolute_Crimes.ipynb**
-- **emailz.csv** (in folder CSVFiles): Emails extracted from Outlook Mail, with no replies and no duplicate subject lines (this allows for pandas merge operation to work effectively)
+- **warnme_info.csv**: WarnMe Emails without replies (some emails have replies that provide extra information, so essentially removed those)
+- **warnme_emails_w_email_dtime.csv**: Combines both emails extracted from Gmail and Outlook into one .csv file (all replies from emails that have one are also removed). There are quite a lot of null values as there are a lot of duplicate subject lines, these are removed in **4.Absolute_Crimes.ipynb**
+- **emailz.csv**: Emails extracted from Outlook Mail, with no replies and no duplicate subject lines (this allows for pandas merge operation to work effectively)
 - **complete_crimes.csv**: Data set containing all emails that send a WarnMe notification out about an actual crime (some WarnMe emails are simply community advisories that usually pertain to general information)  -- reword this
 
 - **same_day_emails.csv**: WarnMe emails containing crimes that send out the email notification on the same day as the occurrence of the crime. This particular dataset was used to see if there is any trend in waiting times between when a crime happens and when the corresponding WarnMe email is sent out. 
