@@ -26,14 +26,14 @@ There are also some .csv files that describe the dataset at different stages of 
   **Email Subject, Email Body, date of crime, time of crime, email time, email day of week, email date, crime location, crime latitude, crime longitude, crime day of week, total difference (in minutes)**
 
 **Some clarifications about the features:** 
-  - time of crime: set in military time
-  - crime latitude: latitude of crime location
-  - crime longitude: longitude of crime location
-  - total difference (in minutes): time difference in minutes between when the crime occurred and when the corresponding email was sent out
+  - **time of crime**: set in military time
+  - **crime latitude**: latitude of crime location
+  - **crime longitude**: longitude of crime location
+  - **total difference (in minutes)**: time difference in minutes between when the crime occurred and when the corresponding email was sent out
   
      
-
-Since the crimes/number of observations are quite low, the main focus of this project was to extract and wrangle the data into a workable dataset. The last Python notebook provides some basic visualizations from this smaller dataset. The first visulization is my attempt on fitting the to a gamma distribution, which describes the waiting times .  The first is a fitting of the same day email waiting times to a gamma distriubtion. Because there is a fairly small number of data points, it's difficult to say that the distribution can model waiting times. The shape parameter alpha = 0.93 may indicate that we can treat the waiting times as independent exponential distributions, which would makes sense since each crime and its corresponding email is unrelated to the next crime that occurs (in other words each crime occurrence and email pair is independent from any of the other crime and email pairs). We could also assume a Poisson Process (gamma shape parameter = 1), although this is a bit of a strech since there are such few data points, and the shape parameter isn't exactly equivalent to 1. 
+## General Conclusions
+Since the crimes/number of observations are quite low, the main focus of this project was to extract and wrangle the data into a workable dataset. The last Python notebook provides some basic visualizations from this smaller dataset. The first visulization is my attempt on fitting the time between crime occurrence and email (for emails that are sent out in the same day as when the crime happens)   to a gamma distribution, which generally describes the number of events occurring in a given time interval. Because there is a fairly small number of data points, it's difficult to say that the distribution can model waiting times. I assume each crime and its corresponding email is unrelated to the next crime that occurs, which most likely makes sense since the generally the occurrence of one crime does not impact the chances of another crime happening  (in other words each crime occurrence and email pair is independent from any of the other crime and email pairs). We could also assume a Poisson Process (gamma shape parameter = 1, so the waiting time for each email is exponentially distributed), although this is a bit of a strech since there are such few data points, and the shape parameter isn't exactly equivalent to 1 (shape parameter ~0.93). 
 
 
 
